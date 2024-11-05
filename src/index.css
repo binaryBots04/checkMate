@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: gilroyEB;
+    src: url(./assets//fonts/gilroyEB.ttf);
+}
+
+@font-face {
+    font-family: albulaExtraLight;
+    src: url(./assets/fonts/albula/albulaExtraLight.ttf);
+}
+
+@font-face {
+    font-family: albulaLight;
+    src: url(./assets/fonts/albula/albulaLight.ttf);
+}
+
+@font-face {
+    font-family: albulaRegular;
+    src: url(./assets/fonts/albula/albulaRegular.ttf);
+}
+
+@font-face {
+    font-family: albulaMedium;
+    src: url(./assets/fonts/albula/albulaMedium.ttf);
+}
+
+@font-face {
+    font-family: albulaBold;
+    src: url(./assets/fonts/albula/albulaBold.ttf);
+}
+
+@font-face {
+    font-family: albulaHeavy;
+    src: url(./assets/fonts/albula/albulaHeavy.ttf);
+}
+
+@font-face {
+    font-family: albulaExtraBold;
+    src: url(./assets/fonts/albula/albulaExtraBold.ttf);
+}
+
+@font-face {
+    font-family: noirProLight;
+    src: url(./assets/fonts/noirPro/NoirPro-Light.otf);
+}
+
+@font-face {
+    font-family: noirProRegular;
+    src: url(./assets/fonts/noirPro/NoirPro-Regular.otf);
+}
+
+@font-face {
+    font-family: noirProMedium;
+    src: url(./assets/fonts/noirPro/NoirPro-Medium.otf);
+}
+
+@font-face {
+    font-family: noirProBold;
+    src: url(./assets/fonts/noirPro/NoirPro-Bold.otf);
+}
+
+@font-face {
+    font-family: noirProHeavy;
+    src: url(./assets/fonts/noirPro/NoirPro-Heavy.otf);
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #6536ff transparent;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #6536ff;
+    border-radius: 10px;
+}

@@ -1,0 +1,53 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-weight: 400;
+	--night: #0F0D13ff;
+	--chrysler-blue: #5102E3ff;
+	--indigo: #3D0695ff;
+	--night-2: #0D0B13ff;
+	--gray: #76777Cff;
+	--olivine: #a3b777ff;
+	--reseda-green: #7a806eff;
+	--mindaro: #cce192ff;
+	--platinum: #e4e5e7ff;
+}
+
+.section {
+	width: 100%;
+	height: 700px;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contentSection {
+	width: 80%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.underFlow {
+	width:fit-content;
+    position: relative;
+    padding-bottom: 10px;
+	cursor: pointer;
+}
+
+.underFlow::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #4200e7;
+    transition: width 0.5s ease;
+}
+
+.underFlow:hover::before {
+    width: 100%;
+}

@@ -1,0 +1,33 @@
+.dark-gradient-background {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, 
+        #16001e,
+        #002025,  
+        #200435,  
+        #000d2b,  
+        #061e35,
+        #180024,
+        #1a0d29,
+        #190129
+    );
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+.glassmorphism-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.glassmorphism-card:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,145 @@
+.tc {
+    color: #ffffff;
+    pointer-events: none;
+    font-weight: bold;
+    user-select: none;
+    -moz-user-select: none;
+    width: calc(90px + 25 * (100vw - 320px) / 1080);
+    height: calc(90px + 25 * (100vw - 320px) / 1080);
+}
+
+.tc svg {
+    fill: #ffffff;
+    animation: rotate 7s infinite linear;
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    left: -25%;
+    top: -25%;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.tc i {
+    font-size: calc(20px + 10 * (100vw - 320px) / 1080);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tc i.is {
+    font-size: calc(25px + 10 * (100vw - 320px) / 1080);
+}
+
+.tc i.awr {
+    animation: arrow 1s infinite linear;
+}
+
+.tc i.awd {
+    animation: arrowd 1s infinite linear;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 0%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, 
+        #16001e,
+        #002025,  
+        #200435,  
+        #000d2b,  
+        #061e35,
+        #180024,
+        #1a0d29,
+        #190129
+    );
+    z-index: -1;
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+.styled-button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: albulaMedium;
+    letter-spacing: 0.2em;
+    position: relative;
+    padding-bottom: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.styled-button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 3px;
+    background-color: #4200e7;
+    transition: width 0.5s ease;
+}
+
+.styled-button:hover::before {
+    width: 100%;
+}
+
+.logoutButton {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: albulaMedium;
+    letter-spacing: 0.2em;
+    position: relative;
+    padding-bottom: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.logoutButton::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 3px;
+    background-color: #e70087;
+    transition: width 0.5s ease;
+}
+
+.logoutButton:hover::before {
+    width: 100%;
+}
